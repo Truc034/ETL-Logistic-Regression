@@ -128,6 +128,7 @@ Automate this script using Windows Task Scheduler by following these steps:
 + Open Notepad and paste the following:
 `
 cd path\to\your\script
+
 python HR_analytics.py
 `
 + Save it as `run_hr_script.bat`
