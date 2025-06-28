@@ -84,3 +84,21 @@ From LMS database you can also retrieve the fact of employment. If student is ma
 + Password: `550814`
 + Database name: `company_course`
 + Table name: `employment`
+
+## 🔧 Project Workflow
+### Extract Data
+Each source was accessed using the appropriate method:
++ `Excel` and `CSV`: downloaded using requests and saved locally
++ `Google Sheets` and `Web` data: loaded with pandas
++ `SQL`: queried via sqlite3 or SQLAlchemy
+
+### Transform Data
+
++ 🧼 **Data Type Conversion**: Categorical fields were converted to the 'category' data type to optimize memory and processing efficiency; string fields like `full_name` were explicitly cast to 'string' for clarity.
++ ⚙️ **Handling Missing Values**: Missing values in categorical columns were filled using the mode (most frequent value), as these fields are nominal and imputation with mode maintains consistency.
++ 🛠️ **Refactoring**: Combine similar steps (fillna + astype) into a loop and function to make the code more concise and easier to maintain.
+
+
+
+
+
