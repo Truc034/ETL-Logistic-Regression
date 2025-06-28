@@ -103,9 +103,9 @@ Each source was accessed using the appropriate method:
 
 + DataFrames were separated into dimension tables and a fact table, then loaded into the database:
 
-  ++ 🧩 1 Fact Table: `fact_enrollies_education`
+  + 🧩 1 Fact Table: `fact_enrollies_education`
 
-  ++ 🧱 5 Dimension Tables: `dim_enrollies_data`, `dim_work_experience`, `dim_training_hours`, `dim_cities`, `dim_employment`
+  + 🧱 5 Dimension Tables: `dim_enrollies_data`, `dim_work_experience`, `dim_training_hours`, `dim_cities`, `dim_employment`
 
 👉 This reflects a basic star schema, enabling more efficient querying and reporting.
 
