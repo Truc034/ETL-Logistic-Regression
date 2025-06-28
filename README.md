@@ -10,8 +10,11 @@ Total 6 data tables collected from various sources including an Excel file, a CS
 As enrollies are submitting their request to join the course via Google Forms, we have the Google Sheet that stores data about enrolled students, containing the following columns:
 
 `enrollee_id`: unique ID of an enrollee
+
 `full_name`: full name of an enrollee
+
 `city`: the name of an enrollie's city
+
 `gender`: gender of an enrollee
 
 The source: https://docs.google.com/spreadsheets/d/1VCkHwBjJGRJ21asd9pxW4_0z2PWuKhbLR3gUHm-p4GI/edit?usp=sharing
