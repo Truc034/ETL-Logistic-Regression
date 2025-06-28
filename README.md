@@ -106,10 +106,18 @@ Each source was accessed using the appropriate method:
   + 🧩 1 Fact Table: `fact_enrollies_education`
 
   + 🧱 5 Dimension Tables: `dim_enrollies_data`, `dim_work_experience`, `dim_training_hours`, `dim_cities`, `dim_employment`
+| Table Name  | Type  | Description |
+| :------------ |:---------------:| -----:|
+| fact_enrollies_education| Fact | Core educational records |
+| dim_enrollies_data      | Dimension       |   Personal/demographic info |
+| dim_work_experience | Dimension     |    Employment background |
+| dim_training_hours      | Dimension | Training time investment |
+| dim_cities      | Dimension |  Location data |
+| dim_employment | Dimension |   Previous employment type & status |
 
 👉 This reflects a basic star schema, enabling more efficient querying and reporting.
 
-
+## ⏱️ Instruction: How to Schedule the Script (on Windows Task Scheduler)
 
 
 
