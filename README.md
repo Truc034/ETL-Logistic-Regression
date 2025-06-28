@@ -85,7 +85,7 @@ From LMS database you can also retrieve the fact of employment. If student is ma
 + Database name: `company_course`
 + Table name: `employment`
 
-## 🔧 Project Workflow
+## 🔧 Project Workflow (ETL process)
 ### Extract Data
 Each source was accessed using the appropriate method:
 + `Excel` and `CSV`: downloaded using requests and saved locally
@@ -97,6 +97,17 @@ Each source was accessed using the appropriate method:
 + 🧼 **Data Type Conversion**: Categorical fields were converted to the 'category' data type to optimize memory and processing efficiency; string fields like `full_name` were explicitly cast to 'string' for clarity.
 + ⚙️ **Handling Missing Values**: Missing values in categorical columns were filled using the mode (most frequent value), as these fields are nominal and imputation with mode maintains consistency.
 + 🛠️ **Refactoring**: Combine similar steps (fillna + astype) into a loop and function to make the code more concise and easier to maintain.
+
+### Load Data 
++ 🗃️ A SQLite database (`data_warehouse.db`) was created using SQLAlchemy.
+
++ DataFrames were separated into dimension tables and a fact table, then loaded into the database:
+
+  ++ 🧩 1 Fact Table: `fact_enrollies_education`
+
+  ++ 🧱 5 Dimension Tables: `dim_enrollies_data`, `dim_work_experience`, `dim_training_hours`, `dim_cities`, `dim_employment`
+
+👉 This reflects a basic star schema, enabling more efficient querying and reporting.
 
 
 
