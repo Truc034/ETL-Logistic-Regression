@@ -133,6 +133,15 @@ python HR_analytics.py
 ```
 + Save it as `run_hr_script.bat`
 
+**3. Schedule with Windows Task Scheduler**
++ Open Task Scheduler
++ Create a new `Basic Task`
+  + Trigger: daily / weekly / at startup
+  + Choose: **Start a program**
+  + Program/script: Browse to your `run_hr_script.bat`
++ Finish the setup and test run.
 
-
+## ✅ Optional Tips
++ You can set logging or email alerts using Python if needed.
++ If you use cloud platforms (e.g., Google Cloud Functions, AWS Lambda), logic can be wrapped into a Python function and triggered via schedule.
 
