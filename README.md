@@ -120,6 +120,7 @@ To run this project on Google Colab:
 
 ## ⏱️ Instruction: How to Schedule the Script (on Windows Task Scheduler)
 Automate this script using Windows Task Scheduler by following these steps:
+
 **1. Export Notebook to Python Script**
 + In Colab: `File > Download > Download .py`, and then save it as: `HR Analytics.py`
 + Or download [.py file here](https://github.com/Truc034/HR_Analytics/blob/main/HR_analytics.py).
