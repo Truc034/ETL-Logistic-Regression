@@ -111,7 +111,7 @@ Each source was accessed using the appropriate method:
 
 ## ⚙️ How to Run This Project (Google Colab)
 To run this project on Google Colab:
-1. Download full notebook [here](https://github.com/Truc034/HR_Analytics/blob/main/HR%20Analytics.ipynb) and open with Google Colab.
+1. Download full notebook [here](https://github.com/Truc034/HR_Analytics/blob/main/HR_analytics.ipynb) and open with Google Colab.
 2. Follow the cells step-by-step:
    + Collect data from all sources
    + Clean and unify the datasets
@@ -122,14 +122,15 @@ To run this project on Google Colab:
 Automate this script using Windows Task Scheduler by following these steps:
 **1. Export Notebook to Python Script**
 + In Colab: `File > Download > Download .py`, and then save it as: `HR Analytics.py`
-+ Or download [.py file here](https://github.com/Truc034/HR_Analytics/blob/main/HR%20Analytics.py).
++ Or download [.py file here](https://github.com/Truc034/HR_Analytics/blob/main/HR_analytics.py).
 
 **2. Create a `.bat` file to run the script**
-Open Notepad and paste the following:
++ Open Notepad and paste the following:
 `
 cd path\to\your\script
-python HR Analytics.py
+python HR_analytics.py
 `
++ Save it as `run_hr_script.bat`
 
 
 
