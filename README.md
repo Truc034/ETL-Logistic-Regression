@@ -106,18 +106,31 @@ Each source was accessed using the appropriate method:
   + 🧩 1 Fact Table: `fact_enrollies_education`
 
   + 🧱 5 Dimension Tables: `dim_enrollies_data`, `dim_work_experience`, `dim_training_hours`, `dim_cities`, `dim_employment`
-| Table Name  | Type  | Description |
-| :------------ |:---------------:| -----:|
-| fact_enrollies_education| Fact | Core educational records |
-| dim_enrollies_data      | Dimension       |   Personal/demographic info |
-| dim_work_experience | Dimension     |    Employment background |
-| dim_training_hours      | Dimension | Training time investment |
-| dim_cities      | Dimension |  Location data |
-| dim_employment | Dimension |   Previous employment type & status |
 
 👉 This reflects a basic star schema, enabling more efficient querying and reporting.
 
+## ⚙️ How to Run This Project (Google Colab)
+To run this project on Google Colab:
+1. Download full notebook [here](https://github.com/Truc034/HR_Analytics/blob/main/HR%20Analytics.ipynb) and open with Google Colab.
+2. Follow the cells step-by-step:
+   + Collect data from all sources
+   + Clean and unify the datasets
+   + Store them into a local SQLite database
+3. Download the database file (`data_warehouse.db`) to explore or use in other tools
+
 ## ⏱️ Instruction: How to Schedule the Script (on Windows Task Scheduler)
+Automate this script using Windows Task Scheduler by following these steps:
+**1. Export Notebook to Python Script**
++ In Colab: `File > Download > Download .py`, and then save it as: `HR Analytics.py`
++ Or download [.py file here](https://github.com/Truc034/HR_Analytics/blob/main/HR%20Analytics.py).
+
+**2. Create a `.bat` file to run the script**
+Open Notepad and paste the following:
+`
+cd path\to\your\script
+python HR Analytics.py
+`
+
 
 
 
